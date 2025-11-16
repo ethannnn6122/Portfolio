@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="E logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="var(--accent-color, #00BFFF)" />
+      <stop offset="1" stop-color="var(--accent-color, #00BFFF)" stop-opacity="0.65" />
+    </linearGradient>
+  </defs>
+  <!-- Use CSS variables with fallbacks; note: external SVGs may not inherit page CSS variables in all contexts, so fallbacks ensure consistent rendering -->
+  <rect width="100" height="100" rx="16" fill="var(--bg-color, #1A1A2E)" />
+  <rect width="100" height="100" rx="16" fill="url(#g)" opacity="0.12" />
+  <text x="50" y="57" font-family="Lato, sans-serif" font-weight="700" font-size="48" fill="var(--accent-color, #00BFFF)" text-anchor="middle">E</text>
+</svg>
