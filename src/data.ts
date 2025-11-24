@@ -65,6 +65,12 @@ export const resume = {
       link:  'https://github.com/ethannnn6122/persona-panel'
     },
     {
+      name: 'Portfolio RAG Bot',
+      description: 'A privacy-focused, AI-powered portfolio assistant that answers questions about my skills and experience. This project demonstrates a Hybrid RAG (Retrieval-Augmented Generation) architecture where the "brain" (LLM) runs entirely in the users browser, while the "memory" (context retrieval) is handled by a lightweight Python backend. An OpenAI API version of this is available below or on the feature/api-cloud-compute branch.',
+      technologies: ['Webgpu', 'Fastapi', 'LLM', 'Langchain', 'RAG', 'ChromaDB'],
+      link:  'https://github.com/ethannnn6122/portfolio-RAG-bot'
+    },
+    {
       name: 'Web Vulnerability Scanner',
       description: 'A tool to identify common security flaws in web applications. The scanner is capable of spidering a target website to discover pages, and then performing tests for Reflected Cross-Site Scripting (XSS) and Error-Based SQL Injection (SQLi) vulnerabilities.',
       technologies: ['Python', 'JSON', 'Beautiful Soup', 'Requests', 'XSS', 'SQLi' ],

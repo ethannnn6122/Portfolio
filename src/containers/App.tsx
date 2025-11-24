@@ -3,6 +3,7 @@ import { resume } from '../data';
 import { ImageSlideshow } from '../components/ImageSlideshow';
 import { ContactForm } from '../components/ContactForm';
 import { ScrollToTopButton } from '../components/ScrollToTopButton';
+import PortfolioChat from '../components/PortfolioChat';
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -124,6 +125,10 @@ function App() {
               </section>
             </aside>
           </div>
+          <section className="ai-chat-section section">
+            <h2>Try my Portfolio RAG Bot</h2>
+        	  <PortfolioChat />
+          </section>
           <section id="contact" className="section">
             <h2>Contact Me</h2>
             <div className="card">
