@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from '../pages/Home';
 import Services from '../pages/Services';
 import BlogList from '../pages/BlogList';
-// import BlogPost from '../pages/BlogPost';
+import BlogPost from '../pages/BlogPost';
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
 import PromoPopup from '../components/PromoPopup';
@@ -47,6 +47,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<BlogList />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </main>

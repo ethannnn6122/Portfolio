@@ -1,24 +1,26 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import classes from './BlogList.module.css';
 
-// Placeholder data (replace with API fetch later)
-const posts = [
-  { 
-    slug: 'setup-vps', 
-    title: 'How I set up my Hostwinds VPS', 
-    date: 'Dec 20, 2025', 
-    summary: 'A deep dive into configuring Nginx, PM2, and Python FastAPI on a budget Linux server.' 
-  },
-  { 
-    slug: 'rag-chatbot', 
-    title: 'Building a Portfolio RAG Bot', 
-    date: 'Dec 15, 2025', 
-    summary: 'How I used LangChain and ChromaDB to let users chat with my resume.' 
-  }
-];
+const API_URL = import.meta.env.VITE_API_URL
 
 const BlogList = () => {
+  const [posts, setPosts] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch(`${API_URL}/api/blog/posts`)
+      .then(res => res.json())
+      .then(data => {
+        setPosts(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error("Failed to fetch posts", err);
+        setLoading(false);
+      });
+  }, []);
+
   return (
     <div className={classes.blogContainer}>
       <section className={classes.headerSection}>
@@ -26,7 +28,9 @@ const BlogList = () => {
         <p>Technical deep dives, tutorials, and project logs.</p>
       </section>
 
-      {posts.length > 0 ? (
+      {loading ? (
+        <div style={{textAlign: 'center', color: '#fff'}}>Loading articles...</div>
+      ) : posts.length > 0 ? (
         <div className={classes.grid}>
           {posts.map(post => (
             <article key={post.slug} className={classes.blogCard}>
@@ -43,8 +47,8 @@ const BlogList = () => {
         </div>
       ) : (
         <div className={classes.emptyState}>
-          <h3>Coming Soon...</h3>
-          <p>I am currently connecting this page to my FastAPI backend. Check back later!</p>
+          <h3>No Posts Yet</h3>
+          <p>Check back soon for new content!</p>
         </div>
       )}
     </div>
