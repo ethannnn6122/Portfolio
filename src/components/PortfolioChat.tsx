@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "../PortfolioChat.module.css";
+import styles from "./PortfolioChat.module.css";
 
 // Config
-const BACKEND_URL = "https://api.milehighcoding.com/chat";
+const BACKEND_URL = import.meta.env.VITE_CHATBOT_API_URL;
 
 const PortfolioChat: React.FC = () => {
 	const [messages, setMessages] = useState([

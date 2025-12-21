@@ -1,0 +1,60 @@
+.FooterWrapper {
+    background-color: var(--surface-color);
+    color: var(primary-text-color);
+    padding: 1rem 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.Brand {
+    font-family: 'Calistoga', serif;
+    color: var(--accent-color);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.SubBrand {
+    color: var(--primary-text-color);
+    opacity: 0.7;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.LinkList {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.FooterLink {
+    color: var(--primary-text-color);
+    opacity: 0.8;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.05rem;
+}
+
+.FooterLink:hover {
+    color: var(--lightBlue);
+    opacity: 1;
+    text-decoration: none;
+}
+
+.Copyright {
+    font-size: 0.7rem;
+    opacity: 0.4;
+    margin-top: 0.8rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 0.8rem;
+}

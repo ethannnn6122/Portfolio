@@ -1,0 +1,95 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Darker dim for better focus */
+  backdrop-filter: blur(4px);
+  z-index: 9999; /* Ensure it's on top of everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.popup {
+  background-color: var(--surface-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.4s ease-out;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: var(--secondary-text-color);
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.closeBtn:hover {
+  color: var(--accent-color);
+}
+
+.icon {
+  font-size: 3rem;
+  color: var(--accent-color-2); /* Gold */
+  margin-bottom: 1rem;
+}
+
+.popup h2 {
+  font-family: var(--heading-font);
+  color: #fff;
+  margin: 0 0 1rem 0;
+  font-size: 2rem;
+}
+
+.popup p {
+  color: var(--primary-text-color);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s, background-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ctaBtn:hover {
+  background-color: var(--accent-color-2);
+  transform: translateY(-2px);
+  color: #000; /* Better contrast on gold */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

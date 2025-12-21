@@ -1,0 +1,100 @@
+/* --- Layout Containers --- */
+.portfolioContainer {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 120px; /* Moves the inline style into CSS */
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* --- Section Styling --- */
+.section {
+  margin: 0 2rem 0 2rem;
+  scroll-margin-top: 80px;
+  text-align: center;
+}
+
+.summaryText {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: var(--primary-text-color);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* --- Service Card Components --- */
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* Note: The global 'card' class handles the background/border */
+}
+
+.serviceCard h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #fff; /* Ensure visibility against card bg */
+}
+
+.serviceCard p {
+  flex-grow: 1; /* Pushes the button to the bottom */
+  margin-bottom: 1.5rem;
+  color: var(--secondary-text-color);
+  line-height: 1.6;
+}
+
+/* --- Icons & Lists --- */
+.iconWrapper {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.serviceList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+}
+
+.serviceList li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- Tech Tags (Ported from Global to Module) --- */
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.techTag {
+  background-color: rgba(33, 150, 243, 0.2);
+  color: var(--accent-color-2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  border: 1px solid var(--accent-color-2);
+  white-space: nowrap;
+}
+
+/* --- Buttons --- */
+.fullWidthBtn {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto;
+  text-align: center;
+  display: block;
+}
