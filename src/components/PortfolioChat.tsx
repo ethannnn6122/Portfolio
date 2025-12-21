@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../PortfolioChat.module.css";
 
 // Config
-const BACKEND_URL = "https://portfolio-rag-bot.onrender.com/chat";
+const BACKEND_URL = "https://api.milehighcoding.com/chat";
 
 const PortfolioChat: React.FC = () => {
 	const [messages, setMessages] = useState([
