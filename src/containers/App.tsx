@@ -8,7 +8,6 @@ import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
 import PromoPopup from '../components/PromoPopup';
 
-import { resume } from '../data';
 import { ScrollToTopButton } from '../components/ScrollToTopButton';
 
 function App() {
