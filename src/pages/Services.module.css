@@ -3,7 +3,7 @@
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 2rem;
-  padding-top: 120px; /* Moves the inline style into CSS */
+  padding-top: 120px; 
 }
 
 .servicesGrid {
@@ -32,8 +32,7 @@
 .serviceCard {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  /* Note: The global 'card' class handles the background/border */
+  height: 90%;
 }
 
 .serviceCard h2 {
@@ -97,4 +96,24 @@
   margin-top: auto;
   text-align: center;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .portfolioContainer {
+    padding: 1rem;       /* Reduce padding to give content more room */
+    padding-top: 100px;  /* Adjust top spacing for mobile navbar */
+  }
+
+  .servicesGrid {
+    /* Change grid to 1 column that fills available space.
+       Removes the 300px minimum limit which causes overflow on small phones.
+    */
+    grid-template-columns: 1fr; 
+    gap: 1.5rem;
+  }
+  
+  .summaryText {
+    font-size: 1rem; /* Slightly smaller text for readability */
+    padding: 0 0.5rem;
+  }
 }

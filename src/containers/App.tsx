@@ -28,7 +28,6 @@ function App() {
           </button>
           
           <ul id="nav-menu-list" className={`nav-menu ${isNavOpen ? 'is-active' : ''}`}>
-            {/* Note the use of Link instead of <a> for internal pages */}
             <li className="nav-item"><Link to="/" className="nav-link" onClick={closeNav}>Home</Link></li>
             <li className="nav-item"><Link to="/services" className="nav-link" onClick={closeNav}>Services</Link></li>
             <li className="nav-item"><Link to="/blog" className="nav-link" onClick={closeNav}>Blog</Link></li>

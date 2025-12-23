@@ -4,14 +4,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75); /* Darker dim for better focus */
+  background-color: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(4px);
-  z-index: 9999; /* Ensure it's on top of everything */
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem; /* Keeps a small gap from screen edges */
   animation: fadeIn 0.3s ease-out;
+  box-sizing: border-box; /* Ensures overlay padding is calculated correctly */
 }
 
 .popup {
@@ -25,6 +26,7 @@
   position: relative;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   animation: slideUp 0.4s ease-out;
+  box-sizing: border-box; 
 }
 
 .closeBtn {
@@ -92,4 +94,26 @@
 @keyframes slideUp {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+@media screen and (max-width: 600px) {
+  .popup {
+    padding: 1.5rem; /* Reduce padding on small screens */
+    width: 100%;     /* Ensure it takes available space */
+    max-width: 100%; /* Reset max-width if needed */
+  }
+
+  .popup h2 {
+    font-size: 1.5rem; /* Smaller heading */
+    margin-bottom: 0.5rem;
+  }
+
+  .popup p {
+    font-size: 1rem; /* Smaller text */
+    margin-bottom: 1.5rem;
+  }
+
+  .icon {
+    font-size: 2.5rem; /* Smaller icon */
+  }
 }

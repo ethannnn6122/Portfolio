@@ -98,7 +98,7 @@ const Services = () => {
       </div>
 
       {/* --- CTA SECTION --- */}
-      <section className={`${classes.section} card`} style={{ marginTop: "6rem" }}>
+      <section className={`${classes.section} card`} style={{ marginTop: "2rem" }}>
         <h2>Not sure what you need?</h2>
         <p style={{ marginBottom: "2rem" }}>
             Let's have a quick chat about your goals. I offer free 15-minute consultations 
