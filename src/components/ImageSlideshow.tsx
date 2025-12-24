@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 export const ImageSlideshow = () => {
     const placeholderImages = [
-        '/images/image1.jpg',
-        '/images/image2.jpg',
-        '/images/image3.jpg'
+        '/images/MVP.png',
+        '/images/RAG.png',
+        '/images/Performance_Hosting.png'
     ];
     const [images] = useState(placeholderImages);
     const [currentIndex, setCurrentIndex] = useState(0);

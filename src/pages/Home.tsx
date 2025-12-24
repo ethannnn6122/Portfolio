@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { resume } from '../data';
 import { ImageSlideshow } from '../components/ImageSlideshow';
-import PortfolioChat from '../components/PortfolioChat';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -111,10 +110,6 @@ function Home() {
               </section>
             </aside>
           </div>
-          <section className="ai-chat-section section">
-            <h2>Try my Portfolio RAG Bot</h2>
-        	  <PortfolioChat />
-          </section>
         </main>
       </div>
     </>

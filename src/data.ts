@@ -66,7 +66,7 @@ export const resume = {
     },
     {
       name: 'Portfolio RAG Bot',
-      description: 'A privacy-focused, AI-powered portfolio assistant that answers questions about my skills and experience. This project demonstrates a Hybrid RAG (Retrieval-Augmented Generation) architecture where the "brain" (LLM) runs entirely in the users browser, while the "memory" (context retrieval) is handled by a lightweight Python backend. An OpenAI API version of this is available below or on the feature/api-cloud-compute branch.',
+      description: 'A privacy-focused, AI-powered portfolio assistant that answers questions about my skills and experience. This project demonstrates a Hybrid RAG (Retrieval-Augmented Generation) architecture where the "brain" (LLM) runs entirely in the users browser, while the "memory" (context retrieval) is handled by a lightweight Python backend. An OpenAI API version of this is available by clicking the chat button or on the feature/api-cloud-compute branch.',
       technologies: ['Webgpu', 'Fastapi', 'LLM', 'Langchain', 'RAG', 'ChromaDB'],
       link:  'https://github.com/ethannnn6122/portfolio-RAG-bot'
     },

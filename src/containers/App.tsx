@@ -7,7 +7,7 @@ import BlogPost from '../pages/BlogPost';
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
 import PromoPopup from '../components/PromoPopup';
-
+import PortfolioChat from '../components/PortfolioChat';
 import { ScrollToTopButton } from '../components/ScrollToTopButton';
 
 function App() {
@@ -49,6 +49,7 @@ function App() {
           <Route path="/contact" element={<ContactForm />} />
         </Routes>
       </main>
+      <PortfolioChat />
       <ScrollToTopButton />
       <Footer />
     </Router>

@@ -7,7 +7,7 @@ const Services = () => {
     <div className={classes.portfolioContainer}>
       {/* --- HERO SECTION --- */}
       <section className={classes.section} style={{ textAlign: "center", marginBottom: "4rem" }}>
-        <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
+        <h1 style={{ fontSize: "3rem", paddingBottom: "1rem" }}>
           Web Development <span style={{ color: "var(--accent-color)" }}>&</span> AI Solutions
         </h1>
         <p className={classes.summaryText} style={{ maxWidth: "800px", margin: "0 auto" }}>
