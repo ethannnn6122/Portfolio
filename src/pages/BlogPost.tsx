@@ -20,7 +20,6 @@ const BlogPost = () => {
   return (
     <div className={classes.postContainer}>
       <Link to="/blog" className={classes.backLink}>← Back to Lab</Link>
-      
       <header className={classes.postHeader}>
         <h1>{post.metadata.title}</h1>
         <div className={classes.meta}>

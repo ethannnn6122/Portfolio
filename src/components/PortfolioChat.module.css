@@ -3,13 +3,16 @@
 /* Container for the whole widget (Button + Window) */
 .widgetContainer {
   position: fixed;
-  bottom: 90px; 
+  bottom: 90px;
   right: 20px;
   z-index: 2000;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   font-family: var(--primary-font);
+  
+  /* CRITICAL FIX: Allows clicks to pass through the empty container area */
+  pointer-events: none; 
 }
 
 /* --- Floating Button --- */
@@ -27,6 +30,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  /* CRITICAL FIX: Re-enables clicks for the button itself */
+  pointer-events: auto; 
 }
 
 .floatingBtn:hover {
@@ -36,7 +42,7 @@
 
 .floatingBtn.hidden {
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; /* Ensure hidden button isn't clickable */
 }
 
 /* --- Chat Window --- */
@@ -57,6 +63,9 @@
   visibility: hidden;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform-origin: bottom right;
+
+  /* CRITICAL FIX: Re-enables clicks for the window (only when visible) */
+  pointer-events: auto; 
 }
 
 /* Animation State: Open */
@@ -65,6 +74,8 @@
   opacity: 1;
   visibility: visible;
 }
+
+/* ... The rest of the CSS (Header, Messages Area, Input Area) remains exactly the same ... */
 
 /* Header */
 .header {

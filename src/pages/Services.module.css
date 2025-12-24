@@ -1,7 +1,7 @@
 /* --- Layout Containers --- */
 .portfolioContainer {
   max-width: var(--container-width);
-  margin: 4rem auto;
+  margin: auto;
   padding: 2rem;
 }
 
