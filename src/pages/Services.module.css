@@ -2,7 +2,7 @@
 .portfolioContainer {
   max-width: var(--container-width);
   margin: auto;
-  padding: 2rem;
+  padding: 4rem;
 }
 
 .servicesGrid {

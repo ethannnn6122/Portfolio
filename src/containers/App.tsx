@@ -33,7 +33,7 @@ function App() {
             <li className="nav-item"><Link to="/blog" className="nav-link" onClick={closeNav}>Blog</Link></li>
             <li className="nav-item"><Link to="/contact" className="nav-link" onClick={closeNav}>Contact</Link></li>
           </ul>
-          <Link to="/" className="nav-logo" onClick={closeNav}><img src="/images/MilehighcodingLogo.png" alt="Cybersecurity theme placeholder" className="slideshow-image" /></Link>
+          <Link to="/" className="nav-logo" onClick={closeNav}><img src="/images/MilehighcodingLogo.svg" alt="Cybersecurity theme placeholder" className="slideshow-image" /></Link>
         </div>
       </nav>
       
