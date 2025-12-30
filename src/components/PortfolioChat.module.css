@@ -1,21 +1,15 @@
-/* src/components/PortfolioChat.module.css */
-
-/* Container for the whole widget (Button + Window) */
 .widgetContainer {
   position: fixed;
-  bottom: 90px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   z-index: 2000;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   font-family: var(--primary-font);
-  
-  /* CRITICAL FIX: Allows clicks to pass through the empty container area */
   pointer-events: none; 
 }
 
-/* --- Floating Button --- */
 .floatingBtn {
   width: 60px;
   height: 60px;
@@ -30,8 +24,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  /* CRITICAL FIX: Re-enables clicks for the button itself */
   pointer-events: auto; 
 }
 
@@ -42,10 +34,9 @@
 
 .floatingBtn.hidden {
   opacity: 0;
-  pointer-events: none; /* Ensure hidden button isn't clickable */
+  pointer-events: none;
 }
 
-/* --- Chat Window --- */
 .chatWindow {
   width: 350px;
   height: 500px;
@@ -56,28 +47,20 @@
   flex-direction: column;
   overflow: hidden;
   margin-bottom: 1rem;
-  
-  /* Animation State: Closed */
   transform: translateY(20px) scale(0.9);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   transform-origin: bottom right;
-
-  /* CRITICAL FIX: Re-enables clicks for the window (only when visible) */
   pointer-events: auto; 
 }
 
-/* Animation State: Open */
 .chatWindow.open {
   transform: translateY(0) scale(1);
   opacity: 1;
   visibility: visible;
 }
 
-/* ... The rest of the CSS (Header, Messages Area, Input Area) remains exactly the same ... */
-
-/* Header */
 .header {
   background-color: var(--accent-color);
   color: white;
@@ -101,7 +84,6 @@
   line-height: 1;
 }
 
-/* Messages Area */
 .messagesArea {
   flex: 1;
   overflow-y: auto;
@@ -135,7 +117,6 @@
   border-bottom-left-radius: 2px;
 }
 
-/* Input Area */
 .inputArea {
   padding: 10px;
   border-top: 1px solid #eee;
@@ -176,7 +157,6 @@
   cursor: default;
 }
 
-/* Mobile Responsive */
 @media (max-width: 480px) {
   .chatWindow {
     width: calc(100vw - 40px);

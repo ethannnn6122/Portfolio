@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className="col-12 text-center">
                         
                         <h3 className={classes.Brand}>Ethan Gruenemeier</h3>
-                        <p className={classes.SubBrand}>Cybersecurity Professional</p>
+                        <p className={classes.SubBrand}>Secure Developer</p>
                         <div className={classes.Copyright}>
                             <p className="mb-0">
                                 &copy; {new Date().getFullYear()} <strong>Milehighcoding</strong>. All rights reserved.

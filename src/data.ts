@@ -41,13 +41,13 @@ export const resume = {
     {
       title: 'Data Center Technician',
       company: 'Flexential',
-      dates: 'Aug. 2024 – Current',
+      dates: 'Aug. 2024 - Current',
       description: 'Conduct routine inspections of data center facilities, identifying and addressing equipment alarms. Perform comprehensive audits to ensure operational compliance and system integrity. Install and configure server equipment for diverse customer requirements. Manage fiber and copper cross connections, ensuring robust network connectivity.',
     },
     {
       title: 'Team Member',
       company: 'Target',
-      dates: 'Jun. 2023 – Aug. 2024',
+      dates: 'Jun. 2023 - Aug. 2024',
       description: 'Locating/Gathering items across the store for online orders and assisting customers around the store.',
     },
     {

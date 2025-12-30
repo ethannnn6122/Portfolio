@@ -28,7 +28,7 @@ function Home() {
           {/* Left Side: Text & Buttons */}
           <div className="hero-text">
               <h1>{resume.name}</h1>
-              <p className="subtitle">Cybersecurity Professional</p>
+              <p className="subtitle">Secure Developer</p>
               
               <div className="hero-cta">
                   <a href="#projects" className="btn btn-primary">View Projects</a>

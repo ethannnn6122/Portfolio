@@ -434,8 +434,8 @@ body {
 
 .scroll-to-top-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 75px;
   background-color: var(--accent-color);
   color: #fff;
   border: none;
